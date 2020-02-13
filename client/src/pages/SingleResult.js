@@ -42,7 +42,7 @@ class SingleResult extends React.Component {
      
       <div className="wrapper">
       <div>
-          <img className="single-image" src={`https://maps.googleapis.com/maps/api/streetview?size=800x800&location=${site.HNUM}+${site.ST_NAME}+${site.PRE_DIR}+${site.ST_TYPE}+MIAMI+FL&heading=271&pitch=-0.76&key=AIzaSyDLun1DYQxp9IawieGnpd-4d0Jrp8sZSHU`} alt="contaminated site" />
+            <img className="single-image" src={`https://maps.googleapis.com/maps/api/streetview?size=800x800&location=${site.HNUM}+${site.ST_NAME}+${site.PRE_DIR}+${site.ST_TYPE}+MIAMI+FL&heading=271&pitch=-0.76&key=${process.env.REACT_APP_GOOGLE_API_KEY}`} alt="contaminated site" />
         </div>
         <div className="text-wrapper">
           <h1>{site.HNUM} {site.PRE_DIR} {site.ST_NAME} {site.ST_TYPE}</h1>
